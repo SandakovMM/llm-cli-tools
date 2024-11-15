@@ -25,7 +25,7 @@ def main():
     opts.add_option("-m", "--model", dest="model", type="string", default="gpt-4o",
                     help="gpt model to use")
     opts.add_option("-l", "--language", dest="language", type="string", default="en",
-                    help="language of the chat and response")
+                    help="language of a response")
 
     (options, _) = opts.parse_args()
 
