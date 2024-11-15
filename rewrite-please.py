@@ -9,8 +9,9 @@ client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 TASK_PROMPT = "Could you please rewrite following {} in perfect simple english. {}"
 
 HELP_MESSAGE = """This tool helps to rewrite sentences for clearer communication.
-It substitutes sensitive information before sending the sentence to the GPT servers.
 Use OPENAI_API_KEY environment variable to pass your openai api key.
+
+Please be careful with sensitive data, as it will be passed to openai servers.
 
 The sentence should be passed through stdin.
 
